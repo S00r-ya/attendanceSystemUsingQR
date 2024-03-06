@@ -12,6 +12,7 @@ for j in (os.listdir(input_dir)):
     img = cv2.imread(os.path.join(input_dir, j))
 
     qr_info = decode(img)
+    print(j, len(qr_info))
 
     for qr in qr_info:
 
